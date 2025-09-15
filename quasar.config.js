@@ -38,7 +38,7 @@ export default defineConfig((/* ctx */) => {
       },
 
       vueRouterMode: 'hash', // available values: 'hash', 'history'
-      // vueRouterBase,
+      vueRouterBase: './', // 设置路由基础路径
       // vueDevtools,
       // vueOptionsAPI: false,
 
