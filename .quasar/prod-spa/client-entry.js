@@ -45,7 +45,7 @@ import quasarUserOptions from './quasar-user-options.js'
 
 
 
-const publicPath = `/`
+const publicPath = `/./`
 
 async function start ({
   app,

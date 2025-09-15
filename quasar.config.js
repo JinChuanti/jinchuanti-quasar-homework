@@ -44,7 +44,7 @@ export default defineConfig((/* ctx */) => {
 
       // rebuildCache: true, // rebuilds Vite/linter/etc cache on startup
 
-      // publicPath: '/',
+      publicPath: './', // 使用相对路径，适合静态部署
       // analyze: true,
       // env: {},
       // rawDefine: {}
@@ -55,6 +55,10 @@ export default defineConfig((/* ctx */) => {
 
       // extendViteConf (viteConf) {},
       // viteVuePluginOptions: {},
+
+      extendViteConf (viteConf) {
+        viteConf.base = './'
+      },
 
       vitePlugins: [
         [
