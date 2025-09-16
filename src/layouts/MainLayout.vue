@@ -60,7 +60,29 @@
           </q-item-section>
         </q-item>
 
-        <!-- 将来 Task 103, 104 等也添加在这里... -->
+        <!-- Task 103 链接 -->
+        <q-item clickable v-ripple to="/task103">
+          <q-item-section avatar>
+            <q-icon name="looks_3" />
+          </q-item-section>
+          <q-item-section>
+            <q-item-label>Task 103</q-item-label>
+            <q-item-label caption>联系人搜索 (Array.from & Filter)</q-item-label>
+          </q-item-section>
+        </q-item>
+
+        <!-- Task 104 链接 -->
+        <q-item clickable v-ripple to="/task104">
+          <q-item-section avatar>
+            <q-icon name="looks_4" />
+          </q-item-section>
+          <q-item-section>
+            <q-item-label>Task 104</q-item-label>
+            <q-item-label caption>Ref响应式系统 (Ref & Reactive)</q-item-label>
+          </q-item-section>
+        </q-item>
+
+        <!-- 将来 Task 105, 106 等也添加在这里... -->
 
       </q-list>
     </q-drawer>
