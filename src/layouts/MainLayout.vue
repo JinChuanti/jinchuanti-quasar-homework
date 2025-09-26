@@ -29,7 +29,7 @@
         </q-item-label>
 
         <!-- 首页链接 -->
-        <q-item clickable v-ripple to="/">
+        <q-item clickable v-ripple :to="{ path: '/' }" exact>
           <q-item-section avatar>
             <q-icon name="home" />
           </q-item-section>
@@ -39,7 +39,7 @@
         </q-item>
 
         <!-- Task 101 链接 -->
-        <q-item clickable v-ripple to="/task101">
+        <q-item clickable v-ripple :to="{ path: '/task101' }" exact>
           <q-item-section avatar>
             <q-icon name="looks_one" />
           </q-item-section>
@@ -50,7 +50,7 @@
         </q-item>
 
         <!-- Task 102 链接 -->
-        <q-item clickable v-ripple to="/task102">
+        <q-item clickable v-ripple :to="{ path: '/task102' }" exact>
           <q-item-section avatar>
             <q-icon name="looks_two" />
           </q-item-section>
@@ -61,7 +61,7 @@
         </q-item>
 
         <!-- Task 103 链接 -->
-        <q-item clickable v-ripple to="/task103">
+        <q-item clickable v-ripple :to="{ path: '/task103' }" exact>
           <q-item-section avatar>
             <q-icon name="looks_3" />
           </q-item-section>
@@ -72,13 +72,35 @@
         </q-item>
 
         <!-- Task 104 链接 -->
-        <q-item clickable v-ripple to="/task104">
+        <q-item clickable v-ripple :to="{ path: '/task104' }" exact>
           <q-item-section avatar>
             <q-icon name="looks_4" />
           </q-item-section>
           <q-item-section>
             <q-item-label>Task 104</q-item-label>
             <q-item-label caption>Ref响应式系统 (Ref & Reactive)</q-item-label>
+          </q-item-section>
+        </q-item>
+
+        <!-- Task 105 链接 -->
+        <q-item clickable v-ripple :to="{ path: '/task105' }" exact>
+          <q-item-section avatar>
+            <q-icon name="looks_5" />
+          </q-item-section>
+          <q-item-section>
+            <q-item-label>Task 105</q-item-label>
+            <q-item-label caption>响应式对象对比 (Ref, Reactive, ShallowRef)</q-item-label>
+          </q-item-section>
+        </q-item>
+
+        <!-- Task 106 链接 -->
+        <q-item clickable v-ripple :to="{ path: '/task106' }" exact>
+          <q-item-section avatar>
+            <q-icon name="looks_6" />
+          </q-item-section>
+          <q-item-section>
+            <q-item-label>Task 106</q-item-label>
+            <q-item-label caption>模板引用与日志系统 (useTemplateRef)</q-item-label>
           </q-item-section>
         </q-item>
 

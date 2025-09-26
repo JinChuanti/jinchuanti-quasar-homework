@@ -12,7 +12,13 @@
           当前计数值:
           <span class="text-primary text-bold q-ml-sm">{{ count }}</span>
           <!-- 创新功能：使用q-chip美化状态显示 -->
-          <q-chip dense :color="statusColor" text-color="white" class="q-ml-md" :label="numberStatus" />
+          <q-chip
+            dense
+            :color="statusColor"
+            text-color="white"
+            class="q-ml-md"
+            :label="numberStatus"
+          />
         </div>
 
         <!-- 创新功能：使用q-input美化输入框 -->
@@ -35,33 +41,42 @@
           <q-btn color="accent" label="平方" @click="square()" />
           <q-btn color="deep-orange" label="乘以 2" @click="double()" />
         </div>
-
       </q-card-section>
     </q-card>
   </q-page>
 </template>
 
 <script setup>
-import { ref, computed } from 'vue';
+import { ref, computed } from 'vue'
 
-const count = ref(0);
+const count = ref(0)
 
-function countUp() { count.value++; }
-function countDown() { count.value--; }
-function resetCount() { count.value = 0; }
-function square() { count.value = count.value * count.value; }
-function double() { count.value = count.value * 2; }
+function countUp() {
+  count.value++
+}
+function countDown() {
+  count.value--
+}
+function resetCount() {
+  count.value = 0
+}
+function square() {
+  count.value = count.value * count.value
+}
+function double() {
+  count.value = count.value * 2
+}
 
 const numberStatus = computed(() => {
-  if (count.value > 0) return '正数';
-  if (count.value < 0) return '负数';
-  return '零';
-});
+  if (count.value > 0) return '正数'
+  if (count.value < 0) return '负数'
+  return '零'
+})
 
 // 创新功能：为状态芯片提供动态颜色
 const statusColor = computed(() => {
-  if (count.value > 0) return 'positive';
-  if (count.value < 0) return 'negative';
-  return 'grey';
-});
+  if (count.value > 0) return 'positive'
+  if (count.value < 0) return 'negative'
+  return 'grey'
+})
 </script>

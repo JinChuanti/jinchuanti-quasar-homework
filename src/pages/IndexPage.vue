@@ -1,130 +1,132 @@
 <template>
-  <q-page class="q-pa-lg">
+  <q-page class="q-pa-md">
     <div class="row justify-center">
-      <div class="col-12 col-md-8 col-lg-6">
-        <!-- 项目标题 -->
-        <div class="text-center q-mb-xl">
-          <q-icon name="code" size="4rem" color="primary" class="q-mb-md" />
-          <h1 class="text-h3 text-weight-bold q-mb-md">Vue 3 移动应用开发作业</h1>
-          <p class="text-h6 text-grey-7">基于 Quasar Framework 的响应式系统学习项目</p>
+      <div class="col-12 col-md-10 col-lg-8">
+        <!-- 简洁的标题区域 -->
+        <div class="text-center q-mb-lg">
+          <h1 class="text-h4 q-mb-sm">移动应用开发作业</h1>
+          <p class="text-subtitle1 text-grey-6">Vue 3 + Quasar 响应式系统实践</p>
         </div>
 
-        <!-- 项目介绍 -->
-        <q-card class="q-mb-lg" flat bordered>
+        <!-- 作业任务导航 -->
+        <q-card class="q-mb-lg">
           <q-card-section>
-            <div class="text-h5 q-mb-md">
-              <q-icon name="info" class="q-mr-sm" />
-              项目介绍
-            </div>
-            <p class="text-body1 q-mb-md">
-              这是一个基于 Vue 3 和 Quasar Framework 开发的移动应用学习项目，主要展示了 Vue 3 响应式系统的核心概念和实际应用。
-            </p>
-            <div class="q-mb-md">
-              <div class="text-h6 q-mb-sm">项目特色：</div>
-              <ul class="q-pl-md">
-                <li>响应式设计，完美适配移动端</li>
-                <li>Vue 3 Composition API 实战演示</li>
-                <li>现代化 UI 设计</li>
-              </ul>
-            </div>
-          </q-card-section>
-        </q-card>
-
-        <!-- GitHub项目推广 -->
-        <q-card class="q-mb-lg" flat bordered>
-          <q-card-section class="bg-gradient-to-r from-blue-500 to-purple-600 text-white">
-            <div class="text-h5 q-mb-md">
-              <q-icon name="school" class="q-mr-sm" />
-              推荐项目：单词记忆助手
-            </div>
-            <p class="text-body1 q-mb-md">
-              正在使用"不背单词"等软件背单词？这个网站是你的完美辅助工具！专门解决词根记忆法难记、覆盖不全的问题，为每个单词提供生动有趣的故事记忆法！
-            </p>
-
-            <div class="q-mb-md">
-              <div class="text-subtitle1 q-mb-sm">✨ 核心优势：</div>
-              <ul class="q-pl-md text-body2">
-                <li>📚 完美辅助"不背单词"等主流背单词软件</li>
-                <li>📖 每个单词都有专属故事，告别枯燥词根记忆</li>
-                <li>🎭 生动有趣的记忆故事，印象更深刻</li>
-                <li>🔍 快速查词功能，学习过程无缝衔接</li>
-                <li>📱 移动端优化，随时随地辅助记忆</li>
-              </ul>
-            </div>
-
-            <div class="row q-gutter-md">
-              <q-btn
-                color="white"
-                text-color="primary"
-                icon="launch"
-                label="立即体验"
-                @click="openWebsite"
-                class="q-px-lg"
-              />
-              <q-btn
-                color="white"
-                text-color="primary"
-                icon="star"
-                label="GitHub Star"
-                @click="openGithub"
-                class="q-px-lg"
-              />
-            </div>
-
-            <div class="q-mt-md text-caption">
-              如果这个辅助工具对你的单词学习有帮助，请为项目点个 ⭐ Star，让更多同学受益！
-            </div>
-          </q-card-section>
-        </q-card>
-
-        <!-- 快速导航 -->
-        <q-card flat bordered>
-          <q-card-section>
-            <div class="text-h5 q-mb-md">
-              <q-icon name="explore" class="q-mr-sm" />
-              快速导航
-            </div>
-            <div class="row q-gutter-md">
-              <div class="col-12 col-sm-6">
+            <h2 class="text-h6 q-mb-md">作业任务</h2>
+            <div class="row q-gutter-sm">
+              <div class="col-6 col-sm-3">
                 <q-btn
+                  unelevated
                   color="primary"
-                  icon="looks_one"
-                  label="Task 101 - Ref 计数器"
+                  icon="counter_1"
+                  label="Task 101"
                   to="/task101"
-                  class="full-width q-py-md"
-                  flat
+                  class="full-width"
+                  size="md"
                 />
               </div>
-              <div class="col-12 col-sm-6">
+              <div class="col-6 col-sm-3">
                 <q-btn
+                  unelevated
                   color="secondary"
-                  icon="looks_two"
-                  label="Task 102 - Reactive 对象"
+                  icon="counter_2"
+                  label="Task 102"
                   to="/task102"
-                  class="full-width q-py-md"
-                  flat
+                  class="full-width"
+                  size="md"
                 />
               </div>
-              <div class="col-12 col-sm-6">
+              <div class="col-6 col-sm-3">
                 <q-btn
+                  unelevated
                   color="accent"
-                  icon="looks_3"
-                  label="Task 103 - 联系人搜索"
+                  icon="counter_3"
+                  label="Task 103"
                   to="/task103"
-                  class="full-width q-py-md"
-                  flat
+                  class="full-width"
+                  size="md"
                 />
               </div>
-              <div class="col-12 col-sm-6">
+              <div class="col-6 col-sm-3">
                 <q-btn
+                  unelevated
                   color="positive"
-                  icon="looks_4"
-                  label="Task 104 - 响应式系统"
+                  icon="counter_4"
+                  label="Task 104"
                   to="/task104"
-                  class="full-width q-py-md"
-                  flat
+                  class="full-width"
+                  size="md"
                 />
               </div>
+              <div class="col-6 col-sm-3">
+                <q-btn
+                  unelevated
+                  color="orange"
+                  icon="counter_5"
+                  label="Task 105"
+                  to="/task105"
+                  class="full-width"
+                  size="md"
+                />
+              </div>
+              <div class="col-6 col-sm-3">
+                <q-btn
+                  unelevated
+                  color="purple"
+                  icon="counter_6"
+                  label="Task 106"
+                  to="/task106"
+                  class="full-width"
+                  size="md"
+                />
+              </div>
+            </div>
+          </q-card-section>
+        </q-card>
+
+        <!-- 项目说明 -->
+        <q-card class="q-mb-lg">
+          <q-card-section>
+            <h2 class="text-h6 q-mb-md">项目说明</h2>
+            <p class="text-body2 q-mb-sm">
+              本项目展示了 Vue 3 响应式系统的核心概念，包括 Ref、Reactive、计算属性等特性的实际应用。
+            </p>
+            <div class="q-gutter-xs">
+              <q-chip color="primary" text-color="white" size="sm">Vue 3</q-chip>
+              <q-chip color="secondary" text-color="white" size="sm">Quasar</q-chip>
+              <q-chip color="accent" text-color="white" size="sm">Composition API</q-chip>
+              <q-chip color="positive" text-color="white" size="sm">响应式</q-chip>
+            </div>
+          </q-card-section>
+        </q-card>
+
+        <!-- 个人项目推荐 -->
+        <q-card class="recommendation-card">
+          <q-card-section class="bg-blue-6 text-white">
+            <div class="row items-center q-mb-md">
+              <q-icon name="bookmark" size="sm" class="q-mr-sm" />
+              <span class="text-subtitle1">推荐项目</span>
+            </div>
+            <h3 class="text-h6 q-mb-sm">单词记忆助手</h3>
+            <p class="text-body2 q-mb-md">
+              专为"不背单词"用户设计的辅助工具，通过故事记忆法帮助记忆单词。
+            </p>
+            <div class="row q-gutter-sm">
+              <q-btn
+                outline
+                color="white"
+                icon="launch"
+                label="体验"
+                @click="openWebsite"
+                size="sm"
+              />
+              <q-btn
+                outline
+                color="white"
+                icon="star"
+                label="Star"
+                @click="openGithub"
+                size="sm"
+              />
             </div>
           </q-card-section>
         </q-card>
@@ -146,7 +148,7 @@ const openGithub = () => {
 </script>
 
 <style scoped>
-.bg-gradient-to-r {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+.recommendation-card {
+  border-left: 4px solid #1976d2;
 }
 </style>
